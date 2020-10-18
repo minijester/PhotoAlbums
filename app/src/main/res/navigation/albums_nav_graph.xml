@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/albumsFragment"
+    android:id="@+id/albums_nav_graph">
+
+    <fragment
+        android:id="@+id/albumsFragment"
+        android:name="com.miharu.imagelist.ui.albums.PhotoAlbumsFragment"
+        android:label="albums"
+        tools:layout="@layout/fragment_photo_albums" >
+        <action
+            android:id="@+id/action_albumsFragment_to_photoDetailFragment"
+            app:destination="@id/photoDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/photoDetailFragment"
+        android:name="com.miharu.imagelist.ui.albums.PhotoDetailFragment"
+        android:label="photoDetail"
+        tools:layout="@layout/fragment_photo_detail" >
+        <argument
+            android:name="photo"
+            app:argType="com.miharu.imagelist.data.model.Photo"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+
+</navigation>

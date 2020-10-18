@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name" translatable="false">ImageList</string>
+
+    <string name="photo_title">Photo</string>
+    <string name="albums_titles">Albums</string>
+    <string name="ok_button">OK</string>
+</resources>

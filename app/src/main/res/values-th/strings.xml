@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="photo_title">รูปภาพ</string>
+    <string name="albums_titles">อัลบั้ม</string>
+    <string name="ok_button">ตกลง</string>
+</resources>
